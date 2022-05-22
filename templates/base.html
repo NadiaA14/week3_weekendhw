@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+        <title>
+            {{title}} - Rock, Paper, Scissors
+        </title>
+</head>
+<div></div>
+<body>
+    <div id="menu">
+    <nav>
+        <a href="/twoplayers">Two Players</a>
+        <a href="/computer">Against Computer</a>
+    </nav>
+    </div>
+    <h1>Rock Paper Scissors</h1>
+    <hr>
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+</html>
